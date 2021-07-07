@@ -1,0 +1,84 @@
+.mainn{
+    background: #FFFFFF !important;
+border: 1px solid #F0F0F0;
+box-sizing: border-box;
+border-radius: 8px;
+min-height: 248px;
+}
+
+.group{
+    position: relative;
+    right: 40px;
+}
+.groupp{
+    position: relative;
+    right: 46px;
+}
+.middleBlock{
+    border-left:0.5px solid #C2CAEB;
+    border-right:0.5px solid #C2CAEB;
+}
+@media screen and (max-width:615px) {
+    .middleBlock{
+        border: none
+    }
+}
+.ethe{
+    font-style: normal;
+font-weight: normal;
+font-size: 15px;
+margin-top:8px ;
+line-height: 24px;
+color:rgba(10, 14, 48, 0.6);
+}
+.hig{
+
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 40px;
+margin-top: 16px;
+
+text-align: center;
+
+color: #0A0E30;
+}
+
+.avgg{
+
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 40px;
+text-align: center;
+color: #0A0E30;
+}
+
+.Avgtitle{
+    font-style: normal;
+    font-size: 9px;
+    line-height: 10px;
+    text-align: center;
+    color: #c0c0c0;
+}
+
+@media screen and (max-width:991px) {
+
+    .cnta{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+@media screen and (max-width: 540px) and (min-width: 280px) {
+
+    .hig{
+       font-size: 19px !important;
+    }
+    .avgg{
+        font-size: 19px !important;
+    }
+    .ava{
+        margin-bottom: 32px;
+    }
+}
