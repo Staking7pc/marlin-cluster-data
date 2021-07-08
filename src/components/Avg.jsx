@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import groupp from "../images/Group 2051.png"
-import groupe from "../images/Group 2050.png"
-import groupc from "../images/Group 2052.png"
+import groupp from "../images/eth-logo.svg"
+import groupe from "../images/dot-logo.svg"
+import groupc from "../images/atom-logo.svg"
 import { Row,Col } from 'react-bootstrap'
 import './Home'
 import "./Avg.css"

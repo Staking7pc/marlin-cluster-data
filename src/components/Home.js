@@ -38,7 +38,7 @@ const Home = () => {
                 "https://sk.marlin.pro/getVerifiedOperators"
               )
               .then((res2) => {   
-                //console.log(res2.data[url.clusterId])             
+                console.log(res2.data[url.clusterId])             
                 setVerifiedCluster(res2.data);                                
               })
               .catch((err) => {
@@ -69,12 +69,12 @@ const Home = () => {
     <div className="container cnta" style={{maxWidth:'1200px',padding:'0px'}} >
 
     <div className="d-flex flex-column "  style={{marginTop:'120px',padding:'0px'}}>
-        <span className="Audit">{verifiedCluster[url.clusterId] === undefined ? ''+url.clusterId : verifiedCluster[url.clusterId]}</span>
+        <span className="Audit">{verifiedCluster[url.clusterId] == undefined ? ''+url.clusterId : verifiedCluster[url.clusterId]}</span>
         <span className="sample">{url.clusterId} 
           <img alt ='some' className="copyImage" onClick={() => {navigator.clipboard.writeText(url.clusterId)}} src={Copy}/>
         </span>        
         <span className="ethereum">{networkData.network} </span>
-        <span className="ethereum">Staked •  {(stakedAmount.MPOND/1000000000000000000).toFixed(4)} MPOND • {Math.ceil(stakedAmount.POND/1000000000000000000)} POND</span>
+        {/* <span className="ethereum">Staked •  {(stakedAmount.MPOND/1000000000000000000).toFixed(4)} MPOND • {Math.ceil(stakedAmount.POND/1000000000000000000)} POND</span> */}
         <span className='lastUpadated'>As of {stakedAmount.time} UTC</span>
     </div>
     </div>

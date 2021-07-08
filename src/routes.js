@@ -1,5 +1,6 @@
 import React from "react";
 import Navbars from "./components/Navbars";
+import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import {
   BrowserRouter as Router,

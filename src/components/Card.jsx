@@ -3,20 +3,21 @@ import {Row,Col} from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import ellipse from "../images/Group 2004.png"
-import elipse from "../images/Group 2005.png"
-import elpse from "../images/Group 2006.png"
-import elpe from "../images/Group 2007.png"
-import ese from "../images/Group 2008.png"
-import epl from "../images/Group 2009.png"
-import crclr from "../images/Rank.png"
-import stat from "../images/Stat.png"
+import ellipse from "../images/Card1-logo.svg"
+import elipse from "../images/Card2-logo.svg"
+import elpse from "../images/Card3-logo.svg"
+import elpe from "../images/Card4-logo.svg"
+import ese from "../images/Card5-logo.svg"
+import epl from "../images/Card6-logo.svg"
+import crclr from "../images/Rank.svg"
+import stat from "../images/Stats.svg"
 import "./card.css"
 import "./Graph.css"
 
 
 function Card()
 {
+    const [stakedAmount, setStakedAmount] = useState([]);
     const [overallAverage, setOverallAverage] = useState([]);
     const [todaysAverage, setTodaysAverage] = useState([]);
     const url = useParams();
@@ -24,7 +25,23 @@ function Card()
     
   useEffect(()=>{
     const getOverallStats = () => {
-
+      
+      axios
+      .get(
+        "https://brightlystake.com/api/marlin/getStakingDetails/" + url.clusterId
+      )
+      .then((res1) => {   
+        try {
+          res1.data.data[0].MPOND==''?console.log('Present'):console.log('Present')
+          setStakedAmount(res1.data.data[0]);
+        } catch{
+          res1.data.data[0].MPOND = 0
+        }
+        
+      })
+      .catch((err) => {
+        console.log(err);
+      });  
       
         axios
           .get(
@@ -64,59 +81,59 @@ function Card()
         
         <div className="container mnn">
             <Row className="cardsWrapper">
-                <Col xl={4} lg={4} md={6} sm={12} xs={12}  className="caaar">
+
+            <Col lg={4} md={6} sm={12} xs={12}  className="caaar">
                
-                <div className="card-2">
-             
-                  <div className="d-flex flex-row justify-content-between" style={{padding:"32px"}}>
-                      <div>
-                      <div className="card-name_one">Tickets Average</div>
-                      <div className="card-number">
-                      {overallAverage.TICKETS}
-                      </div>
-                      </div>
-                      <div><img alt = '2' src={ellipse} className="ellipse"  />
-                      </div>
-                 
-                     
+               <div className="card-2">
+            
 
-                  </div>
+                 <div className="d-flex flex-row justify-content-between" style={{padding:"32px"}}>
+                     <div >
+                     <div className="card-name_one">Total Staked</div>
+                     <div className="card-number">
+                     {Math.ceil(((stakedAmount.MPOND/1000000000000000000)*1000000+stakedAmount.POND/1000000000000000000)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}                     
+                     </div>
+                     </div>
+                     <div><img alt = '2' src={ese} className="ellipse"/>
+
+                     </div>
+                
+                     {/* <span className="ethereum">Staked •  {(stakedAmount.MPOND/1000000000000000000).toFixed(4)} MPOND • {Math.ceil(stakedAmount.POND/1000000000000000000)} POND</span> */}
+
+                 </div>
 <div className="d-flex flex-row" style={{padding:"32px"}}>
-    <div>
-    <img alt = '2' src={crclr} />
+   <div>
+   <img alt = '2' src={crclr} />
 
-    </div>
-    <div className="d-flex flex-column">
-    <span className="card-datee">
-                          {" "}
-                          {Math.ceil(overallAverage.TICKETS_Rank)} /{" "}
-                          {overallAverage.TICKETS_MAX}
-                        </span>
-        <span className="Rank">Rank</span>
-    </div>
+   </div>
+   <div className="d-flex flex-column">
+   <span className="card-datee">
+   {Math.ceil(stakedAmount.POND/1000000000000000000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                       </span>
+       <span className="Rank">POND</span>
+   </div>
 </div>
 
 <div className='d-flex flex-row'  style={{padding:"32px"}}>
 <div>
-    <img alt = '2' src={stat} />
-    </div>
-    <div className="d-flex flex-column">
-    <span className="card-datee">
-                         
-             {todaysAverage.TICKETS} -{" "}
-                          {Math.ceil(todaysAverage.TICKETS_Rank)}
-                        </span>
+   <img alt = '2' src={stat} />
+
+   </div>
+   <div className="d-flex flex-column">
+   <span className="card-datee">
+                        
+   {(stakedAmount.MPOND/1000000000000000000).toFixed(2)}
+                       </span>
 
 
-        <span className="Rank"> Todays Stats</span>
-    </div>
+       <span className="Rank">MPond (1 MPond = 1M POND)</span>
+   </div>
 </div>
-                </div>
-             
+               </div>
+            
 
-          
-                </Col>
-
+         
+               </Col> 
 
                 <Col xl={4} lg={4} md={6}  sm={12} xs={12} className="caaar">
       
@@ -165,7 +182,7 @@ function Card()
                         </span>
 
 
-        <span className="Rank">Todays Stats</span>
+        <span className="Rank">Today's Stats</span>
     </div>
 </div>
                 </div>
@@ -181,7 +198,7 @@ function Card()
 
                   <div className="d-flex flex-row justify-content-between" style={{padding:"32px"}}>
                       <div >
-                      <div className="card-name_one">MPOND APY</div>
+                      <div className="card-name_one">MPond APY</div>
                       <div className="card-number">
                       {overallAverage.MPOND_APY}%
                       </div>
@@ -221,7 +238,7 @@ function Card()
                         </span>
 
 
-        <span className="Rank">Todays Stats</span>
+        <span className="Rank">Today's Stats</span>
     </div>
 </div>
                 </div>
@@ -229,6 +246,60 @@ function Card()
 
           
                 </Col>
+
+                <Col xl={4} lg={4} md={6} sm={12} xs={12}  className="caaar">
+               
+               <div className="card-2">
+            
+                 <div className="d-flex flex-row justify-content-between" style={{padding:"32px"}}>
+                     <div>
+                     <div className="card-name_one">Tickets Average</div>
+                     <div className="card-number">
+                     {overallAverage.TICKETS}
+                     </div>
+                     </div>
+                     <div><img alt = '2' src={ellipse} className="ellipse"  />
+                     </div>
+                
+                    
+
+                 </div>
+<div className="d-flex flex-row" style={{padding:"32px"}}>
+   <div>
+   <img alt = '2' src={crclr} />
+
+   </div>
+   <div className="d-flex flex-column">
+   <span className="card-datee">
+                         {" "}
+                         {Math.ceil(overallAverage.TICKETS_Rank)} /{" "}
+                         {overallAverage.TICKETS_MAX}
+                       </span>
+       <span className="Rank">Rank</span>
+   </div>
+</div>
+
+<div className='d-flex flex-row'  style={{padding:"32px"}}>
+<div>
+   <img alt = '2' src={stat} />
+   </div>
+   <div className="d-flex flex-column">
+   <span className="card-datee">
+                        
+            {todaysAverage.TICKETS} -{" "}
+                         {Math.ceil(todaysAverage.TICKETS_Rank)}
+                       </span>
+
+
+       <span className="Rank"> Today's Stats</span>
+   </div>
+</div>
+               </div>
+            
+
+         
+               </Col>
+
 
                 <Col lg={4} md={6} sm={12} xs={12}  className="caaar">
               
@@ -277,7 +348,7 @@ function Card()
                         </span>
 
 
-        <span className="Rank">Todays Stats</span>
+        <span className="Rank">Today's Stats</span>
     </div>
 </div>
                 </div>
@@ -319,7 +390,7 @@ function Card()
                           )}{" "}
                           POND/day
                         </span>
-        <span className="Rank"> Stake 1 MPOND</span>
+        <span className="Rank"> Stake 1,000,000 POND</span>
     </div>
 </div>
 
@@ -340,7 +411,7 @@ function Card()
                         </span>
 
 
-        <span className="Rank"> Stake 1 MPOND</span>
+        <span className="Rank"> Stake 1 MPond</span>
     </div>
 </div>
                 </div>
@@ -349,61 +420,6 @@ function Card()
           
                 </Col>
 
-                {/* <Col lg={4} md={6} sm={12} xs={12}  className="caaar">
-               
-               <div className="card-2">
-            
-
-                 <div className="d-flex flex-row justify-content-between" style={{padding:"32px"}}>
-                     <div >
-                     <div className="card-name_one">Tickets Average</div>
-                     <div className="card-number">
-                     {overallAverage.TICKETS}
-                     </div>
-                     </div>
-                     <div><img alt = '2' src={ese} className="ellipse"/>
-
-                     </div>
-                
-
-
-                 </div>
-<div className="d-flex flex-row" style={{padding:"32px"}}>
-   <div>
-   <img alt = '2' src={crclr} />
-
-   </div>
-   <div className="d-flex flex-column">
-   <span className="card-datee">
-                         {" "}
-                         {Math.ceil(overallAverage.TICKETS_Rank)} /{" "}
-                         {overallAverage.TICKETS_MAX}
-                       </span>
-       <span className="Rank">Rank</span>
-   </div>
-</div>
-
-<div className='d-flex flex-row'  style={{padding:"32px"}}>
-<div>
-   <img alt = '2' src={stat} />
-
-   </div>
-   <div className="d-flex flex-column">
-   <span className="card-datee">
-                        
-            {todaysAverage.TICKETS} -{" "}
-                         {Math.ceil(todaysAverage.TICKETS_Rank)}
-                       </span>
-
-
-       <span className="Rank">Todays Stats</span>
-   </div>
-</div>
-               </div>
-            
-
-         
-               </Col> */}
             </Row>
         </div>
 
