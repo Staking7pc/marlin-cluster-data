@@ -78,14 +78,14 @@ function Card()
 
     return(
         <>
-        
+ 
         <div className="container mnn">
+            <div className='cards-title'>Stats Summary</div>
             <Row className="cardsWrapper">
 
             <Col lg={4} md={6} sm={12} xs={12}  className="caaar">
                
                <div className="card-2">
-            
 
                  <div className="d-flex flex-row justify-content-between" style={{padding:"32px"}}>
                      <div >

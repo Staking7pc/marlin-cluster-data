@@ -51,7 +51,7 @@ color: #0A0E30;
     box-sizing: border-box;
     border-radius: 4px;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 .day{
     font-style: normal;
@@ -98,11 +98,9 @@ color: rgba(10, 14, 48, 0.6);
     align-items: center;
     cursor: pointer;
   }
-.roww{
-    margin-top: 15px;
+.roww{    
     margin-bottom: 19px ;
     box-sizing: border-box;
- 
 }
 .regular-checkbox {
     -webkit-appearance: none;

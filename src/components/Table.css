@@ -24,9 +24,9 @@ border-bottom: hidden;
     font-style: normal;
 font-weight: 600;
 font-size: 12px;
-align-items: center;
 color: #000000;
 }
+
 .header{
 margin-left: 10px;
 font-style: normal;
@@ -65,12 +65,27 @@ cursor: pointer;
 }
 .table{
     height: 75%;
+    text-align: center;
     /* margin-top: 32px;
     margin-left: 40px ; */
     /* position: relative; */
 
     
 }
+.table-title{
+    /* Header text */
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+padding-bottom: 32px;
+color: #0A0E30;
+
+
+  }
+
 .numbers{
     font-style: normal;
 font-weight: 500 ;

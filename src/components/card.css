@@ -18,6 +18,20 @@ box-sizing: border-box;
 border-radius: 8px;
 
   }
+
+  .cards-title{
+    /* Header text */
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+padding-bottom: 20px;
+color: #0A0E30;
+
+
+  }
   .card-name_one {
     font-style: normal;
     font-weight: 500;
