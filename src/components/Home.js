@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import Graph from "./Graph";
-import APYGraph from "./APYGraph";
+import APRGraph from "./APRGraph";
 import Avg from "./Avg";
 import Table from "./Table";
 import "./Home.css";
@@ -63,7 +63,7 @@ const Home = () => {
     <>
       <div
         className="container cnta"
-        style={{ maxWidth: "1200px", padding: "0px" }}
+        style={{ maxWidth: "1600px", padding: "0px" }}
       >
         <div
           className="d-flex flex-column "
@@ -86,13 +86,16 @@ const Home = () => {
             />
           </span>
           <span className="ethereum">{networkData.network} </span>          
-          <span className="lastUpadated">As of {stakedAmount.time} UTC</span>
+         
         </div>
       </div>
       <Card />    
-      <APYGraph />
+      <APRGraph />
       <Graph />
       <Table />
+      
+      <div className="leavegap"></div>
+
       <p style={{ textAlign: "center" }}>
         Created by Brightlystake.com
       </p>

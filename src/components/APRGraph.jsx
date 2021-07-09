@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { ButtonGroup } from "react-bootstrap";
 import moment from "moment";
-import "./APYGraph.css";
+import "./APRGraph.css";
 
 function Graph() {
   const [items, setitems] = useState([]);
@@ -119,7 +119,7 @@ function Graph() {
     <>
       <div
         className="container cntt"
-        style={{ maxWidth: "1200px", marginTop: "182px", padding: "0px" }}
+        style={{ maxWidth: "1600px", marginTop: "120px", padding: "0px" }}
       >
         <div className="crd">
           <div className="row padng">
@@ -175,7 +175,7 @@ function Graph() {
                     {
                       borderWidth: 2,
                       // yAxisID: 'A',
-                      label: "POND APY",
+                      label: "POND APR",
                       fill: true,
                       borderColor: "#07AEC4",
                       // backgroundColor: "rgba(54,207,217,0.6)",
@@ -186,7 +186,7 @@ function Graph() {
                     {
                       //yAxisID: 'B',
                       borderWidth: 2,
-                      label: "MPond APY",
+                      label: "MPond APR",
                       fill: true,
                       borderColor: "#3840C7",
                       backgroundColor: ticketColor,

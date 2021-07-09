@@ -89,3 +89,16 @@ body {
     color: #0a0e30;
   }
 }
+.leavegap{
+  /* Header text */
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+padding-bottom: 120px;
+color: #0A0E30;
+
+
+}

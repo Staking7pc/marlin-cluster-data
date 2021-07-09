@@ -80,7 +80,7 @@ function Card()
         <>
  
         <div className="container mnn">
-            <div className='cards-title'>Stats Summary</div>
+            <div className='cards-title'>Stats Summary As of {stakedAmount.time} UTC</div>
             <Row className="cardsWrapper">
 
             <Col lg={4} md={6} sm={12} xs={12}  className="caaar">
@@ -89,7 +89,7 @@ function Card()
 
                  <div className="d-flex flex-row justify-content-between" style={{padding:"32px"}}>
                      <div >
-                     <div className="card-name_one">Total Staked</div>
+                     <div className="card-name_one">Total Staked (in POND)</div>
                      <div className="card-number">
                      {Math.ceil(((stakedAmount.MPOND/1000000000000000000)*1000000+stakedAmount.POND/1000000000000000000)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}                     
                      </div>
@@ -142,7 +142,7 @@ function Card()
 
                   <div className="d-flex flex-row justify-content-between" style={{padding:"32px"}}>
                       <div >
-                      <div className="card-name_one">POND APY</div>
+                      <div className="card-name_one">POND APR</div>
                       <div className="card-number">
                       {overallAverage.POND_APY}%
                       </div>
@@ -198,7 +198,7 @@ function Card()
 
                   <div className="d-flex flex-row justify-content-between" style={{padding:"32px"}}>
                       <div >
-                      <div className="card-name_one">MPond APY</div>
+                      <div className="card-name_one">MPond APR</div>
                       <div className="card-number">
                       {overallAverage.MPOND_APY}%
                       </div>

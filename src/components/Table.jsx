@@ -128,13 +128,14 @@ function Table() {
         style={{
           padding: "0px",
           overflow: "hidden",
-          marginTop: "182px",
-          maxWidth: "1200px",
+          marginTop: "132px",
+          maxWidth: "1600px",
+          maxHeight: "632px" 
         }}
       >
         <div className="table-title">Daily Summary</div>
         <div className="tbe">
-          <p className="header">Date wise details for {url.clusterId} </p>
+          {/* <p className="header">Date wise details for {url.clusterId} </p> */}
           <table className="table ">
             <thead className="headr ">
               <tr>

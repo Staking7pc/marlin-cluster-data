@@ -9,7 +9,7 @@ function Navbars() {
     <>
       <div
         className="container cntt"
-        style={{ padding: "0px", maxWidth: "1200px" }}
+        style={{ padding: "0px", maxWidth: "1600px" }}
       >
         <div className="pading">
           <div className="bordr">
