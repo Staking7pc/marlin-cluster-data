@@ -71,10 +71,10 @@ const Home = () => {
         >
           <span className="Audit">
             {verifiedCluster[url.clusterId] == undefined
-              ? "" + url.clusterId
+              ? ""
               : verifiedCluster[url.clusterId]}
           </span>
-          <span className="sample">
+          <span className={verifiedCluster[url.clusterId] == undefined ?"Audit":"sample"}>
             {url.clusterId}
             <img
               alt="some"
@@ -85,25 +85,24 @@ const Home = () => {
               src={Copy}
             />
           </span>
-          <span className="ethereum">{networkData.network} </span>          
-         
+          <span className="ethereum">{networkData.network} </span>
         </div>
       </div>
-      <Card />    
+      <Card />
       <APRGraph />
       <Graph />
       <Table />
-      
+
       <div className="leavegap"></div>
 
+      <p style={{ textAlign: "center" }}>Created by Brightlystake.com</p>
       <p style={{ textAlign: "center" }}>
-        Created by Brightlystake.com
+        The data is refreshed every 5 minutes; Averages are calculated from June
+        1, 2021.
       </p>
       <p style={{ textAlign: "center" }}>
-        The data is refreshed every 5 minutes; Averages are calculated from June 1, 2021.
-      </p>
-      <p style={{ textAlign: "center" }}>
-        If you find any issues drop in a mail to Staking7pc@gmail.com or join our <a href="https://t.me/Brightlystake">Telegram channel</a>
+        If you find any issues drop in a mail to Staking7pc@gmail.com or join
+        our <a href="https://t.me/Brightlystake">Telegram channel</a>
       </p>
       <p style={{ textAlign: "center" }}>
         Disclaimer: There are few factors which will skew up the information

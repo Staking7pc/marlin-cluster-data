@@ -44,8 +44,9 @@ function Navbars() {
             </Navbar>
           </div>
         </div>
+        <hr className="hr"></hr>
       </div>
-      <hr className="hr"></hr>
+      
     </>
   );
 }

@@ -18,7 +18,7 @@ function Card() {
   const [stakedAmount, setStakedAmount] = useState([]);
   const [overallAverage, setOverallAverage] = useState([]);
   const [todaysAverage, setTodaysAverage] = useState([]);
-  const url = useParams();
+  const url = useParams();  
 
   useEffect(() => {
     const getOverallStats = () => {

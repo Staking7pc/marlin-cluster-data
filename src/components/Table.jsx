@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-// import paginationFactory from 'react-bootstrap-table2-paginator';
 import axios from "axios";
 import "./Table.css";
 import Next from "../images/grtr.png";
@@ -151,10 +150,10 @@ function Table() {
               </tr>
             </thead>
             <tbody>
-              {items.map((item, index) => {
+              {items.map((item, index) => {                
                 let endIndex = end ? 10 : itemEnd - 1;
                 if (index + 1 >= itemStart && index + 1 <= endIndex) {
-                  //console.log(itemEnd)
+                  console.log(itemEnd)
 
                   return (
                     <tr className="roow">
