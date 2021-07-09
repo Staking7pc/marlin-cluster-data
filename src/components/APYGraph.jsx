@@ -29,7 +29,7 @@ function Graph() {
   useEffect(() => {
     const chart = () => {
       axios
-        .get("https://brightlystake.com/api/marlin/5minStats/" + url.clusterId + "?count=8640")
+        .get("https://brightlystake.com/api/marlin/5minStats/" + url.clusterId + "?count=2016")
         .then((res) => {
           setitems(res.data.data);
 
