@@ -11,6 +11,8 @@ function Graph() {
   const [items, setitems] = useState([]);
   const [weekData, setweekData] = useState([]);
   const [dayData, setDayData] = useState([]);
+  const [monthData, setMonthData] = useState([]);
+  
   //const [tablemindata, settablemindata] = useState([]);
   const [showDay, setShowDay] = useState(true);
   const [latency, setLatency] = useState(true);
@@ -27,7 +29,7 @@ function Graph() {
   useEffect(() => {
     const chart = () => {
       axios
-        .get("https://brightlystake.com/api/marlin/5minStats/" + url.clusterId)
+        .get("https://brightlystake.com/api/marlin/5minStats/" + url.clusterId + "?count=8640")
         .then((res) => {
           setitems(res.data.data);
 
@@ -40,6 +42,7 @@ function Graph() {
 
           var time24hrs = moment.duration("24:00:00");
           var time7days = moment.duration("168:00:00");
+          var time30days = moment.duration("720:00:00");
 
           var date = moment(latestObj.time);
           var cutOffTime24Hrs = date
@@ -48,6 +51,9 @@ function Graph() {
           var cutOffTime7Days = date
             .subtract(time7days)
             .format("YYYY-MM-DD HH:MM:SS");
+          var cutOffTime30Days = date
+            .subtract(time30days)
+            .format("YYYY-MM-DD HH:MM:SS");            
           //console.log(cutOffTime24Hrs + cutOffTime7Days)
 
           let dayData = res.data.data.filter((f) => f.time > cutOffTime24Hrs);
@@ -56,8 +62,11 @@ function Graph() {
           let weekData = res.data.data.filter((f) => f.time > cutOffTime7Days);
           //console.log(weekData)
 
+          let monthData = res.data.data.filter((f) => f.time > cutOffTime30Days);
+
           setweekData(weekData);
           setDayData(dayData);
+          setMonthData(monthData);
         })
         .catch((err) => {
           console.log(err);
