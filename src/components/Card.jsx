@@ -138,7 +138,7 @@ function Card() {
                 style={{ padding: "32px" }}
               >
                 <div>
-                  <div className="card-name_one">POND APR</div>
+                  <div className="card-name_one">Average POND APR </div>
                   <div className="card-number">{overallAverage.POND_APY}%</div>
                 </div>
                 <div>
@@ -182,7 +182,7 @@ function Card() {
                 style={{ padding: "32px" }}
               >
                 <div>
-                  <div className="card-name_one">MPond APR</div>
+                  <div className="card-name_one">Average MPond APR</div>
                   <div className="card-number">{overallAverage.MPOND_APY}%</div>
                 </div>
                 <div>

@@ -100,7 +100,7 @@ const Home = () => {
         Created by Brightlystake.com
       </p>
       <p style={{ textAlign: "center" }}>
-        The data is refreshed every 5 minutes
+        The data is refreshed every 5 minutes; Averages are calculated from June 1, 2021.
       </p>
       <p style={{ textAlign: "center" }}>
         If you find any issues drop in a mail to Staking7pc@gmail.com or join our <a href="https://t.me/Brightlystake">Telegram channel</a>
