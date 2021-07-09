@@ -9,7 +9,7 @@ border-radius: 8px; */
 
 
 width: 512px;
-height: 340px;
+height: 443px;
 left: 120px;
 top: 549px;
 background: #FFFFFF;
@@ -35,17 +35,17 @@ color: #0A0E30;
   .card-name_one {
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 24px;    
     color: #6C6E83;
   }
   .card-number{
     position: absolute;
-    padding-top: 8px;
+    padding-top: 16px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 38px;
     line-height: 40px;
     /* identical to box height, or 125% */
     
@@ -60,7 +60,7 @@ color: #0A0E30;
   .card-datee{
     font-style: normal;
 font-weight: 500;
-font-size: 20px;
+font-size: 27px;
 line-height: 24px;
 color: #0A0E30;
 margin-left: 12px;

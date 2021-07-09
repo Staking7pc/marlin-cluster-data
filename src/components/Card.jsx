@@ -84,7 +84,7 @@ function Card() {
             <div className="card-2">
               <div
                 className="d-flex flex-row justify-content-between"
-                style={{ padding: "32px" }}
+                style={{ padding: "42px" }}
               >
                 <div>
                   <div className="card-name_one">Total Staked (in POND)</div>
@@ -102,7 +102,7 @@ function Card() {
                 </div>
              
               </div>
-              <div className="d-flex flex-row" style={{ padding: "32px" }}>
+              <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
                   <img alt="2" src={crclr} />
                 </div>
@@ -116,7 +116,7 @@ function Card() {
                 </div>
               </div>
 
-              <div className="d-flex flex-row" style={{ padding: "32px" }}>
+              <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
                   <img alt="2" src={crclr} />
                 </div>
@@ -135,7 +135,7 @@ function Card() {
             <div className="card-2">
               <div
                 className="d-flex flex-row justify-content-between"
-                style={{ padding: "32px" }}
+                style={{ padding: "42px" }}
               >
                 <div>
                   <div className="card-name_one">Average POND APR </div>
@@ -145,7 +145,7 @@ function Card() {
                   <img alt="2" src={elipse} className="ellipse" />
                 </div>
               </div>
-              <div className="d-flex flex-row" style={{ padding: "32px" }}>
+              <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
                   <img alt="2" src={crclr} />
                 </div>
@@ -159,7 +159,7 @@ function Card() {
                 </div>
               </div>
 
-              <div className="d-flex flex-row" style={{ padding: "32px" }}>
+              <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
                   <img alt="2" src={stat} />
                 </div>
@@ -179,7 +179,7 @@ function Card() {
             <div className="card-2">
               <div
                 className="d-flex flex-row justify-content-between"
-                style={{ padding: "32px" }}
+                style={{ padding: "42px" }}
               >
                 <div>
                   <div className="card-name_one">Average MPond APR</div>
@@ -189,7 +189,7 @@ function Card() {
                   <img alt="2" src={elpse} className="ellipse" />
                 </div>
               </div>
-              <div className="d-flex flex-row" style={{ padding: "32px" }}>
+              <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
                   <img alt="2" src={crclr} />
                 </div>
@@ -203,7 +203,7 @@ function Card() {
                 </div>
               </div>
 
-              <div className="d-flex flex-row" style={{ padding: "32px" }}>
+              <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
                   <img alt="2" src={stat} />
                 </div>
@@ -223,7 +223,7 @@ function Card() {
             <div className="card-2">
               <div
                 className="d-flex flex-row justify-content-between"
-                style={{ padding: "32px" }}
+                style={{ padding: "42px" }}
               >
                 <div>
                   <div className="card-name_one">Tickets Average</div>
@@ -233,7 +233,7 @@ function Card() {
                   <img alt="2" src={ellipse} className="ellipse" />
                 </div>
               </div>
-              <div className="d-flex flex-row" style={{ padding: "32px" }}>
+              <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
                   <img alt="2" src={crclr} />
                 </div>
@@ -247,7 +247,7 @@ function Card() {
                 </div>
               </div>
 
-              <div className="d-flex flex-row" style={{ padding: "32px" }}>
+              <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
                   <img alt="2" src={stat} />
                 </div>
@@ -267,7 +267,7 @@ function Card() {
             <div className="card-2">
               <div
                 className="d-flex flex-row justify-content-between"
-                style={{ padding: "32px" }}
+                style={{ padding: "42px" }}
               >
                 <div>
                   <div className="card-name_one">Latency Score Avg</div>
@@ -279,7 +279,7 @@ function Card() {
                   <img alt="2" src={elpe} className="ellipse" />
                 </div>
               </div>
-              <div className="d-flex flex-row" style={{ padding: "32px" }}>
+              <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
                   <img alt="2" src={crclr} />
                 </div>
@@ -293,7 +293,7 @@ function Card() {
                 </div>
               </div>
 
-              <div className="d-flex flex-row" style={{ padding: "32px" }}>
+              <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
                   <img alt="2" src={stat} />
                 </div>
@@ -313,7 +313,7 @@ function Card() {
             <div className="card-2">
               <div
                 className="d-flex flex-row justify-content-between"
-                style={{ padding: "32px" }}
+                style={{ padding: "42px" }}
               >
                 <div>
                   <div className="card-name_one">Fees</div>
@@ -323,7 +323,7 @@ function Card() {
                   <img alt="2" src={epl} className="ellipse" />
                 </div>
               </div>
-              <div className="d-flex flex-row" style={{ padding: "32px" }}>
+              <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
                   <img alt="2" src={crclr} />
                 </div>
@@ -341,7 +341,7 @@ function Card() {
                 </div>
               </div>
 
-              <div className="d-flex flex-row" style={{ padding: "32px" }}>
+              <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
                   <img alt="2" src={stat} />
                 </div>
