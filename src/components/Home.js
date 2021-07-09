@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import Graph from "./Graph";
+import APYGraph from "./APYGraph";
 import Avg from "./Avg";
 import Table from "./Table";
 import "./Home.css";
@@ -88,9 +89,9 @@ const Home = () => {
           <span className="lastUpadated">As of {stakedAmount.time} UTC</span>
         </div>
       </div>
-      <Card />
+      <Card />    
+      <APYGraph />
       <Graph />
-      <Avg />
       <Table />
       <p style={{ textAlign: "center" }}>
         Created by Brightlystake.com
