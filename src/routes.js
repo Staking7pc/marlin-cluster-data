@@ -1,6 +1,6 @@
 import React from "react";
 import Navbars from "./components/Navbars";
-import Navbar from "./components/Navbar";
+import Dashboard from "./components/Dashboard";
 import Home from "./components/Home";
 import {
   BrowserRouter as Router,
@@ -16,6 +16,7 @@ function routes(props) {
           <Navbars/>
           <Switch>
             <Route path="/marlin/analytics/:clusterId" component={Home} />
+            <Route path="/marlin/dashboard" component={Dashboard} />
           </Switch>
         </React.Fragment>
       </Router>

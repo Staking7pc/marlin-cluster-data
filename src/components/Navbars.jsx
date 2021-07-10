@@ -35,7 +35,7 @@ function Navbars() {
                 <Nav className="mr-auto"></Nav>
 
                 <Nav>
-                  <Nav.Link className="dashboard">Dashboard</Nav.Link>
+                  <Nav.Link href="/marlin/Dashboard" className="dashboard">Dashboard</Nav.Link>
                   <Nav.Link href="https://app.marlin.pro/relay/operator" className="dashboard">Operators</Nav.Link>
                   <Nav.Link href="https://app.marlin.pro/relay/operator/register" className="dashboard">Register</Nav.Link>
                   <Nav.Link href="https://app.marlin.pro/relay/stash" className="dashboard">Delegate</Nav.Link>

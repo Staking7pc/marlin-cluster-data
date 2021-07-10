@@ -1,4 +1,5 @@
 import React from "react";
+import moment from 'moment';
 import { Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -77,7 +78,7 @@ function Card() {
     <>
       <div className="container mnn">
         <div className="cards-title">
-          Stats Summary As of {stakedAmount.time} UTC
+  Stats Summary As of {moment(stakedAmount.time).format('LL')} {moment(stakedAmount.time).format('LTS')} UTC
         </div>
         <Row className="cardsWrapper">
           <Col lg={4} md={6} sm={12} xs={12} className="caaar">

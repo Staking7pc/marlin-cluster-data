@@ -138,7 +138,7 @@ function Table() {
           <table className="table ">
             <thead className="headr ">
               <tr>
-                <th scope="col">LatencyScore</th>
+                <th scope="col">Latency Score</th>
                 <th scope="col">Rank</th>
                 <th scope="col">Tickets</th>
                 <th scope="col">Rank</th>
