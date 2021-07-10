@@ -3,6 +3,7 @@ import Card from "./Card";
 import Graph from "./Graph";
 import APRGraph from "./APRGraph";
 import Avg from "./Avg";
+
 import Table from "./Table";
 import "./Home.css";
 import { useParams } from "react-router-dom";

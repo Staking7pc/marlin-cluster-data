@@ -142,9 +142,9 @@ function Table() {
                 <th scope="col">Rank</th>
                 <th scope="col">Tickets</th>
                 <th scope="col">Rank</th>
-                <th scope="col">POND APY</th>
+                <th scope="col">POND APR</th>
                 <th scope="col">Rank</th>
-                <th scope="col">MPOND APY</th>
+                <th scope="col">Mpond APR</th>
                 <th scope="col">Rank</th>
                 <th scope="col">Date</th>
               </tr>

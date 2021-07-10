@@ -1,5 +1,5 @@
 import React from "react";
-import moment from 'moment';
+import moment from "moment";
 import { Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -19,7 +19,7 @@ function Card() {
   const [stakedAmount, setStakedAmount] = useState([]);
   const [overallAverage, setOverallAverage] = useState([]);
   const [todaysAverage, setTodaysAverage] = useState([]);
-  const url = useParams();  
+  const url = useParams();
 
   useEffect(() => {
     const getOverallStats = () => {
@@ -78,7 +78,8 @@ function Card() {
     <>
       <div className="container mnn">
         <div className="cards-title">
-  Stats Summary as of {moment(stakedAmount.time).format('LL')} {moment(stakedAmount.time).format('LTS')} UTC
+          Stats Summary As of {moment(stakedAmount.time).format("LL")}{" "}
+          {moment(stakedAmount.time).format("LTS")} UTC
         </div>
         <Row className="cardsWrapper">
           <Col lg={4} md={6} sm={12} xs={12} className="caaar">
@@ -101,7 +102,6 @@ function Card() {
                 <div>
                   <img alt="2" src={ese} className="ellipse" />
                 </div>
-             
               </div>
               <div className="d-flex flex-row" style={{ padding: "42px" }}>
                 <div>
@@ -153,7 +153,10 @@ function Card() {
                 <div className="d-flex flex-column">
                   <span className="card-datee">
                     {" "}
-                    {Math.ceil(overallAverage.POND_Rank)}<a className="shaded" style={{textDecoration: 'none'}}>/{" "} {overallAverage.POND_MAX}</a>
+                    {Math.ceil(overallAverage.POND_Rank)}
+                    <a className="shaded" style={{ textDecoration: "none" }}>
+                      / {overallAverage.POND_MAX}
+                    </a>
                   </span>
                   <span className="Rank">Rank</span>
                 </div>
@@ -165,7 +168,10 @@ function Card() {
                 </div>
                 <div className="d-flex flex-column">
                   <span className="card-datee">
-                    {todaysAverage.POND_APY}%<a className="shaded" style={{textDecoration: 'none'}}>- {Math.ceil(todaysAverage.POND_Rank)}</a> 
+                    {todaysAverage.POND_APY}%
+                    <a className="shaded" style={{ textDecoration: "none" }}>
+                      - {Math.ceil(todaysAverage.POND_Rank)}
+                    </a>
                   </span>
 
                   <span className="Rank">Today's APR - Rank</span>
@@ -195,8 +201,10 @@ function Card() {
                 <div className="d-flex flex-column">
                   <span className="card-datee">
                     {" "}
-                    {Math.ceil(overallAverage.MPOND_Rank)}<a className="shaded" style={{textDecoration: 'none'}}>/{" "}
-                    {overallAverage.MPOND_MAX}</a>
+                    {Math.ceil(overallAverage.MPOND_Rank)}
+                    <a className="shaded" style={{ textDecoration: "none" }}>
+                      / {overallAverage.MPOND_MAX}
+                    </a>
                   </span>
                   <span className="Rank">Rank</span>
                 </div>
@@ -208,7 +216,10 @@ function Card() {
                 </div>
                 <div className="d-flex flex-column">
                   <span className="card-datee">
-                    {todaysAverage.MPOND_APY}%<a className="shaded" style={{textDecoration: 'none'}}>- {Math.ceil(todaysAverage.MPOND_Rank)}</a> 
+                    {todaysAverage.MPOND_APY}%
+                    <a className="shaded" style={{ textDecoration: "none" }}>
+                      - {Math.ceil(todaysAverage.MPOND_Rank)}
+                    </a>
                   </span>
 
                   <span className="Rank">Today's APR - Rank</span>
@@ -238,8 +249,10 @@ function Card() {
                 <div className="d-flex flex-column">
                   <span className="card-datee">
                     {" "}
-                    {Math.ceil(overallAverage.TICKETS_Rank)}<a className="shaded" style={{textDecoration: 'none'}}>/{" "}
-                    {overallAverage.TICKETS_MAX}</a> 
+                    {Math.ceil(overallAverage.TICKETS_Rank)}
+                    <a className="shaded" style={{ textDecoration: "none" }}>
+                      / {overallAverage.TICKETS_MAX}
+                    </a>
                   </span>
                   <span className="Rank">Rank</span>
                 </div>
@@ -251,7 +264,10 @@ function Card() {
                 </div>
                 <div className="d-flex flex-column">
                   <span className="card-datee">
-                    {todaysAverage.TICKETS}<a className="shaded" style={{textDecoration: 'none'}}>- {Math.ceil(todaysAverage.TICKETS_Rank)}</a>
+                    {todaysAverage.TICKETS}
+                    <a className="shaded" style={{ textDecoration: "none" }}>
+                      - {Math.ceil(todaysAverage.TICKETS_Rank)}
+                    </a>
                   </span>
 
                   <span className="Rank"> Today's tickets avg - Rank</span>
@@ -283,8 +299,10 @@ function Card() {
                 <div className="d-flex flex-column">
                   <span className="card-datee">
                     {" "}
-                    {Math.ceil(overallAverage.LATENCY_SCORE_Rank)}<a className="shaded" style={{textDecoration: 'none'}}>/{" "}
-                    {overallAverage.LATENCY_SCORE_MAX}</a> 
+                    {Math.ceil(overallAverage.LATENCY_SCORE_Rank)}
+                    <a className="shaded" style={{ textDecoration: "none" }}>
+                      / {overallAverage.LATENCY_SCORE_MAX}
+                    </a>
                   </span>
                   <span className="Rank">Rank</span>
                 </div>
@@ -297,7 +315,9 @@ function Card() {
                 <div className="d-flex flex-column">
                   <span className="card-datee">
                     {todaysAverage.LATENCY_SCORE}
-                    <a className="shaded" style={{textDecoration: 'none'}}>- {Math.ceil(todaysAverage.LATENCY_SCORE_Rank)}</a>
+                    <a className="shaded" style={{ textDecoration: "none" }}>
+                      - {Math.ceil(todaysAverage.LATENCY_SCORE_Rank)}
+                    </a>
                   </span>
 
                   <span className="Rank">Today's latency avg - Rank</span>
@@ -331,7 +351,11 @@ function Card() {
                       (overallAverage.POND_APY / 100) *
                         (1000000 / 365) *
                         ((100 - overallAverage.fees) / 100)
-                    )} POND<a className="shaded" style={{textDecoration: 'none'}}>/day</a>
+                    )}{" "}
+                    POND
+                    <a className="shaded" style={{ textDecoration: "none" }}>
+                      /day
+                    </a>
                   </span>
                   <span className="Rank"> Stake 1,000,000 POND</span>
                 </div>
@@ -347,7 +371,12 @@ function Card() {
                       (overallAverage.MPOND_APY / 100) *
                         (1000000 / 365) *
                         ((100 - overallAverage.fees) / 100)
-                    )} POND<a className="shaded" style={{textDecoration:'none'}}>/day</a></span>
+                    )}{" "}
+                    POND
+                    <a className="shaded" style={{ textDecoration: "none" }}>
+                      /day
+                    </a>
+                  </span>
 
                   <span className="Rank"> Stake 1 MPond</span>
                 </div>

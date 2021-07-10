@@ -128,8 +128,8 @@ function Graph() {
                 {showDay ? "24 Hour " : "7 Days "}
                 {tickets
                   ? latency
-                    ? "POND and MPOND Graph"
-                    : "MPOND Graph"
+                    ? "POND and Mpond Graph"
+                    : "Mpond Graph"
                   : latency
                   ? "POND Graph"
                   : "No Selection"}
@@ -265,7 +265,7 @@ function Graph() {
                   tickets ? setTickets(false) : setTickets(true);
                 }}
               />
-              <span className="latency">MPOND</span>
+              <span className="latency">Mpond</span>
             </div>
           </div>
         </div>

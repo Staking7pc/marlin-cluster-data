@@ -98,7 +98,7 @@ function Avg ()
                         <div className="d-flex  justify-content-center ethe">Todays</div>
                         <div className="d-flex  justify-content-center Avgtitle">Token  •  High •  Avg</div>
                         <div className="d-flex  justify-content-center  hig">POND  •  {maxPONDToday}% •  {avgPONDToday}%</div>
-                       <div className="d-flex  justify-content-center avgg">MPOND •  {maxMPONDToday}% •  {avgMPONDToday}%</div>
+                       <div className="d-flex  justify-content-center avgg">Mpond •  {maxMPONDToday}% •  {avgMPONDToday}%</div>
                     </Col>
 
                     <Col lg={4} md={4} sm={12} xs={12}>
@@ -115,7 +115,7 @@ function Avg ()
                       <div className="d-flex  justify-content-center  ethe">7 days</div>
                        <div className="d-flex  justify-content-center Avgtitle">Token  •  High •  Avg</div>
                        <div className="d-flex  justify-content-center  hig">POND  •  {maxPOND7day}% •  {avgPOND7day}%</div>
-                       <div className="d-flex  justify-content-center avgg">MPOND •  {maxMPOND7day}% •  {avgMPOND7day}%</div>
+                       <div className="d-flex  justify-content-center avgg">Mpond •  {maxMPOND7day}% •  {avgMPOND7day}%</div>
                        </div>
                     </Col>
 
@@ -134,7 +134,7 @@ function Avg ()
                           <div className="d-flex  justify-content-center ethe">30 days</div>
                           <div className="d-flex  justify-content-center Avgtitle">Token  •  High •  Avg</div>
                           <div className="d-flex  justify-content-center  hig">POND  •  {maxPOND30day}% •  {avgPOND30day}%</div>
-                          <div className="d-flex  justify-content-center avgg">MPOND •  {maxMPOND30day}% •  {avgMPOND30day}%</div>
+                          <div className="d-flex  justify-content-center avgg">Mpond •  {maxMPOND30day}% •  {avgMPOND30day}%</div>
                     </Col>
                 </Row>
             </div>
