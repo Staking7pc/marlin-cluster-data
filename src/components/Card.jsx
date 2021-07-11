@@ -78,7 +78,7 @@ function Card() {
     <>
       <div className="container mnn">
         <div className="cards-title">
-          Stats Summary As of {moment(stakedAmount.time).format("LL")}{" "}
+          Stats Summary as of {moment(stakedAmount.time).format("LL")}{" "}
           {moment(stakedAmount.time).format("LTS")} UTC
         </div>
         <Row className="cardsWrapper">
