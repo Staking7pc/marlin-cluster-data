@@ -75,7 +75,11 @@ const Home = () => {
               ? ""
               : verifiedCluster[url.clusterId]}
           </span>
-          <span className={verifiedCluster[url.clusterId] == undefined ?"Audit":"sample"}>
+          <span
+            className={
+              verifiedCluster[url.clusterId] == undefined ? "Audit" : "sample"
+            }
+          >
             {url.clusterId}
             <img
               alt="some"
@@ -96,6 +100,32 @@ const Home = () => {
 
       <div className="leavegap"></div>
 
+     
+      <div className="caaar">
+        <div className="rules">
+          <p className = 'rulesheader'> Calculation approach</p>
+          <p>
+            1 - Average POND and MPond values are net average of the values
+            from June 1, 2021
+          </p>
+          <p>
+            2 - Records having POND APR > 1000% are ignored as it is just skewed
+            up data due to the fact 0 POND was staked
+          </p>
+          <p>
+            3 - Today's APR is the average of the values from 00:00 UTC for that
+            cluster
+          </p>
+          <p>
+            4 - Returns calculated i.e. no of POND per 1 MPond or 1M POND is
+            calculated with the overall APR returns which is from June 1, 2021.
+          </p>
+        </div>
+      </div>
+
+      <div className="leavegap"></div>
+
+     
       <p style={{ textAlign: "center" }}>Created by Brightlystake.com</p>
       <p style={{ textAlign: "center" }}>
         The data is refreshed every 5 minutes; Averages are calculated from June

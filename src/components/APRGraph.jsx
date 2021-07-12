@@ -128,10 +128,10 @@ function Graph() {
                 {showDay ? "24 Hour " : "7 Days "}
                 {tickets
                   ? latency
-                    ? "POND and MPond Graph"
-                    : "MPond Graph"
+                    ? "POND and MPond APR Graph"
+                    : "MPond APR Graph"
                   : latency
-                  ? "POND Graph"
+                  ? "POND APR Graph"
                   : "No Selection"}
               </h3>
             </div>
