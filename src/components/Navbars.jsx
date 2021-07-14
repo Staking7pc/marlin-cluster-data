@@ -9,7 +9,7 @@ function Navbars() {
     <>
       <div
         className="container cntt"
-        style={{ padding: "0px", maxWidth: "1600px" }}
+        style={{ padding: "0px", maxWidth: "90%" }}
       >
         <div className="pading">
           <div className="bordr">
@@ -43,8 +43,9 @@ function Navbars() {
               </Navbar.Collapse>
             </Navbar>
           </div>
+          <hr className="hr"></hr>
         </div>
-        <hr className="hr"></hr>
+        
       </div>
       
     </>

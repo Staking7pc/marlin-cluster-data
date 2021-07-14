@@ -128,7 +128,7 @@ function Table() {
           padding: "0px",
           overflow: "hidden",
           marginTop: "132px",
-          maxWidth: "1600px",
+          maxWidth: "90%",
           maxHeight: "632px" 
         }}
       >

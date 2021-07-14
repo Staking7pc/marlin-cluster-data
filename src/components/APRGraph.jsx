@@ -119,7 +119,7 @@ function Graph() {
     <>
       <div
         className="container cntt"
-        style={{ maxWidth: "1600px", marginTop: "120px", padding: "0px" }}
+        style={{ maxWidth: "90%", marginTop: "120px", padding: "0px" }}
       >
         <div className="crd">
           <div className="row padng">

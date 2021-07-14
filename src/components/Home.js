@@ -64,7 +64,7 @@ const Home = () => {
     <>
       <div
         className="container cnta"
-        style={{ maxWidth: "1600px", padding: "0px" }}
+        style={{ maxWidth: "90%", padding: "0px" }}
       >
         <div
           className="d-flex flex-column "
