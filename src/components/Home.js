@@ -139,6 +139,9 @@ const Home = () => {
         Disclaimer: There are few factors which will skew up the information
         provided like non-availability of data, skewed up data etc.{" "}
       </p>
+      <p style={{ textAlign: "center" }}>
+        The values shown here are approximate values, if you have see any bugs do let us know.
+      </p>
     </>
   );
 };
