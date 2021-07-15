@@ -1,5 +1,5 @@
 .card-2 {
-    /* max-width: 384px;
+  /* max-width: 384px;
     width: 100%;
 height: 340px;
 background: #FFFFFF;
@@ -7,169 +7,163 @@ border: 1px solid #F0F0F0;
 box-sizing: border-box;
 border-radius: 8px; */
 
+  width: 550px;
+  height: 470px;
+  left: 120px;
+  top: 550px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
 
-width: 550px;
-height: 470px;
-left: 120px;
-top: 550px;
-background: #FFFFFF;
-border: 1px solid #F0F0F0;
-box-sizing: border-box;
-border-radius: 8px;
+.cards-title {
+  /* Header text */
 
-  }
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 20px;
+  color: #0a0e30;
+}
+.card-name_one {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 24px;
+  color: #6c6e83;
+}
+.card-number {
+  position: absolute;
+  padding-top: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
 
-  .cards-title{
-    /* Header text */
+  display: flex;
+  align-items: center;
 
-font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 30px;
-padding-bottom: 20px;
-color: #0A0E30;
-
-
-  }
-  .card-name_one {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 24px;    
-    color: #6C6E83;
-  }
-  .card-number{
-    position: absolute;
-    padding-top: 16px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 38px;
-    line-height: 40px;
-    /* identical to box height, or 125% */
-    
-    display: flex;
-    align-items: center;
-    
-    color: #0A0E30;
-  }
-.ced{
+  color: #0a0e30;
+}
+.ced {
   padding: 0px;
 }
-  .card-datee{
-    font-style: normal;
-font-weight: 500;
-font-size: 27px;
-line-height: 24px;
-color: #0A0E30;
-margin-left: 12px;
+.card-datee {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 24px;
+  color: #0a0e30;
+  margin-left: 12px;
 }
-.caaar{
+.caaar {
   display: flex;
   justify-content: center;
   margin-bottom: 24px;
   padding: 0px !important;
 }
-  .Rank{
- font-style: normal;
-font-weight: normal;
-padding-top: 10px;
-font-size: 19px;
-line-height: 24px;
-margin-left: 12px;
-color: #A9A9A9	;
-  }
+.Rank {
+  font-style: normal;
+  font-weight: normal;
+  padding-top: 10px;
+  font-size: 19px;
+  line-height: 24px;
+  margin-left: 12px;
+  color: #a9a9a9;
+}
 
-  .shaded{    
-   padding-top: 10px;
-   font-size: 24px;
-   line-height: 24px;
-   margin-left: 12px;
-   color: #A9A9A9	;
-     }
-  .strr{
-    position: relative;
-    right: 14px;
-  }
-  .ellipse{
-    margin-top: 3px;
- 
-  }
-  .mnn{
+.shaded {
+  padding-top: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  margin-left: 12px;
+  color: #a9a9a9;
+}
+.strr {
+  position: relative;
+  right: 14px;
+}
+.ellipse {
+  margin-top: 3px;
+}
+.mnn {
+  margin-top: 120px;
+  max-width: 90% !important;
+  padding: 0px !important;
+}
+.cardsWrapper {
+  justify-content: space-around;
+  /* margin: 0 !important; */
+}
 
-    margin-top: 120px;
-    max-width: 90% !important;
-    padding: 0px !important;
-  }
-  .cardsWrapper{
-    justify-content: space-around;
-    /* margin: 0 !important; */
-  }
-
-@media only screen and (max-width:768px) and (min-width:700px) {
+@media only screen and (max-width: 768px) and (min-width: 700px) {
   .card-2 {
     max-width: 340px;
-
   }
-
 }
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width: 375px) {
   .card-2 {
     max-width: 344px;
-height: 340px;
-background: #FFFFFF;
-border: 1px solid #F0F0F0;
-box-sizing: border-box;
-border-radius: 8px;
+    height: 340px;
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 8px;
   }
-
-
 }
-@media only screen and (max-width:360px) {
+@media only screen and (max-width: 360px) {
   .card-2 {
     max-width: 332px;
-height: 340px;
-background: #FFFFFF;
-border: 1px solid #F0F0F0;
-box-sizing: border-box;
-border-radius: 8px;
+    height: 340px;
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 8px;
   }
-
-
 }
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width: 1080px) {
+  .card-2 {
+    max-width: 300px;
+    height: 480px;
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
   .card-2 {
     max-width: 295px;
-height: 340px;
-background: #FFFFFF;
-border: 1px solid #F0F0F0;
-box-sizing: border-box;
-border-radius: 8px;
+    height: 340px;
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 8px;
   }
-
-
 }
 
-@media only screen and (max-width:280px) {
+@media only screen and (max-width: 280px) {
   .card-2 {
     max-width: 255px;
-height: 340px;
-background: #FFFFFF;
-border: 1px solid #F0F0F0;
-box-sizing: border-box;
-border-radius: 8px;
+    height: 340px;
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 8px;
   }
-
-
 }
 
-
-@media only screen and (max-width:768px) and (min-width:280px){
-
-  .row{
+@media only screen and (max-width: 768px) and (min-width: 280px) {
+  .row {
     margin: 0px !important;
   }
 }
