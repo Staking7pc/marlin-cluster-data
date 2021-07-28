@@ -14,7 +14,7 @@ function routes(props) {
         <React.Fragment>
           <Navbars/>
           <Switch>
-            <Route path="/marlin/analytics/:clusterId" component={Home} />
+            <Route path="/analytics/:clusterId" component={Home} />
           </Switch>
         </React.Fragment>
       </Router>
