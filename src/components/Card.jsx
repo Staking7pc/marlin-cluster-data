@@ -334,7 +334,7 @@ function Card() {
               >
                 <div>
                   <div className="card-name_one">Fees</div>
-                  <div className="card-number">{overallAverage.fees}%</div>
+                  <div className="card-number">{todaysAverage.fees}%</div>
                 </div>
                 <div>
                   <img alt="2" src={epl} className="ellipse" />
@@ -350,7 +350,7 @@ function Card() {
                     {Math.ceil(
                       (overallAverage.POND_APY / 100) *
                         (1000000 / 365) *
-                        ((100 - overallAverage.fees) / 100)
+                        ((100 - todaysAverage.fees) / 100)
                     )}{" "}
                     POND
                     <a className="shaded" style={{ textDecoration: "none" }}>
@@ -370,7 +370,7 @@ function Card() {
                     {Math.ceil(
                       (overallAverage.MPOND_APY / 100) *
                         (1000000 / 365) *
-                        ((100 - overallAverage.fees) / 100)
+                        ((100 - todaysAverage.fees) / 100)
                     )}{" "}
                     POND
                     <a className="shaded" style={{ textDecoration: "none" }}>
