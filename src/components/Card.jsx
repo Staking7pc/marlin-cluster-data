@@ -283,7 +283,7 @@ function Card() {
                 style={{ padding: "42px" }}
               >
                 <div>
-                  <div className="card-name_one">Latency Score Avg</div>
+                  <div className="card-name_one">Performance Score Avg</div>
                   <div className="card-number">
                     {overallAverage.LATENCY_SCORE}
                   </div>
