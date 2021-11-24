@@ -119,7 +119,7 @@ function Graph() {
                 {showDay ? "24 Hour " : "7 Days "}
                 {tickets
                   ? latency
-                    ? "Latency Score and Tickets Graph"
+                    ? "Performance Score and Tickets Graph"
                     : "Ticket Graph"
                   : latency
                   ? "Latency Graph"
@@ -245,7 +245,7 @@ function Graph() {
                   latency ? setLatency(false) : setLatency(true);
                 }}
               />
-              <span className="latency"> Latency Score</span>
+              <span className="latency"> Performance Score</span>
             </div>
             <div className="ml-4  d-flex">
               <input
