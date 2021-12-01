@@ -320,7 +320,7 @@ function Card() {
                     </a>
                   </span>
 
-                  <span className="Rank">Today's latency avg - Rank</span>
+                  <span className="Rank">Today's Performance avg - Rank</span>
                 </div>
               </div>
             </div>
