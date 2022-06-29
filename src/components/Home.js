@@ -36,7 +36,7 @@ const Home = () => {
       });
 
     axios
-      .get("https://sk.marlin.pro/getVerifiedOperators")
+      .get("https://sk.arb1.marlin.org/getVerifiedOperators")
       .then((res2) => {
         console.log(res2.data[url.clusterId]);
         setVerifiedCluster(res2.data);
@@ -46,7 +46,7 @@ const Home = () => {
       });
 
     axios
-      .get("https://sk.marlin.pro/getClusterInfo")
+      .get("https://sk.arb1.marlin.org/getClusterInfo")
       .then((res3) => {
         //console.log(res3.data[url.clusterId].network)
         if (res3.data[url.clusterId].network == undefined) {

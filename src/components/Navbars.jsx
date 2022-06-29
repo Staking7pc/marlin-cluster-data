@@ -21,7 +21,7 @@ function Navbars() {
             >
               <div>
                 <Navbar.Brand>
-                  <img alt="2" className="img_one" src={group} />{" "}
+		  <img alt="2" width="60" height="60" className="img_one" src='https://brightlystake.com/.well-known/Brightlystake-logo256.png' />{" "}
                   <span className="relay">
                     <a href="https://Brightlystake.com" style={{textDecoration: 'none'}}>Brightlystake.com</a></span>{" "}
                 </Navbar.Brand>
@@ -36,9 +36,9 @@ function Navbars() {
 
                 <Nav>
                   <Nav.Link href="/marlin/Dashboard" className="dashboard">Dashboard</Nav.Link>
-                  <Nav.Link href="https://app.marlin.pro/relay/operator" className="dashboard">Operators</Nav.Link>
-                  <Nav.Link href="https://app.marlin.pro/relay/operator/register" className="dashboard">Register</Nav.Link>
-                  <Nav.Link href="https://app.marlin.pro/relay/stash" className="dashboard">Delegate</Nav.Link>
+                  <Nav.Link href="https://arb1.marlin.org/relay/operator" className="dashboard">Operators</Nav.Link>
+                  <Nav.Link href="https://arb1.marlin.org/relay/operator/register" className="dashboard">Register</Nav.Link>
+                  <Nav.Link href="https://arb1.marlin.org/relay/stash" className="dashboard">Delegate</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
