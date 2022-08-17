@@ -106,7 +106,7 @@ const Home = () => {
           <p className = 'rulesheader'> Calculation approach</p>
           <p>
             1 - Average POND and MPond values are net average of the values
-            from June 1, 2021
+            for the past 30 days
           </p>
           <p>
             2 - Records having POND APR > 1000% are ignored as it is just skewed
