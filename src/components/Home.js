@@ -128,8 +128,7 @@ const Home = () => {
      
       <p style={{ textAlign: "center" }}>Created by Brightlystake.com</p>
       <p style={{ textAlign: "center" }}>
-        The data is refreshed every 5 minutes; Averages are calculated from June
-        1, 2021.
+        The data is refreshed every 5 minutes; Averages are calculated for the past 30 days
       </p>
       <p style={{ textAlign: "center" }}>
         If you find any issues drop in a mail to Staking7pc@gmail.com or join
